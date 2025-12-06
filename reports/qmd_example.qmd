@@ -1,8 +1,16 @@
 ---
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
-format: html
 editor: source
+
+format:
+  html:
+    embed-resources: true
+  pdf:
+    documentclass: article
+    fig-pos: 'H'
+    toc: true          #enabling table of contents
+    toc-depth: 3       #including the headings
 
 bibliography: references.bib
 execute:
@@ -29,7 +37,7 @@ The Python programming language (@Python) and the following Python packages were
 
 ## Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-pop}
+![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-pop width=80%}
 
 We can see from @fig-pop that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada. All provinces have had a decline in horse populations since 1940. This is likely due to the rebound of the Canadian automotive industry after the Great Depression and the Second World War. An interesting follow-up visualisation would be car sales per year for each Province over the time period visualised above to further support this hypothesis.
 
@@ -49,7 +57,7 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
+Additionally, note that in @tbl-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-pop.
 
 ![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-pop2 width=60%}
 
